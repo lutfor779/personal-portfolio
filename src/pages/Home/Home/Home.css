@@ -1,0 +1,8 @@
+.color1{
+    background: #0f0c29; 
+    background: linear-gradient(to right, #0f0c29, #302b63, #0f0c29); 
+}
+.color2{
+    background: #2a0845;  
+    background: linear-gradient(to right, #2a0845, #1a2a6c, #2a0845); 
+}
