@@ -6,3 +6,9 @@
     background: #2a0845;  
     background: linear-gradient(to right, #2a0845, #1a2a6c, #2a0845); 
 }
+.highlight{
+    color: #52ffb7;
+}
+.text{
+    color: #F37335;
+}

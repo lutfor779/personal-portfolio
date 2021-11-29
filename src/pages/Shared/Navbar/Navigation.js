@@ -24,7 +24,7 @@ const Navigation = () => {
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/home">Home</Nav.Link>
                         <Nav.Link as={Link} to="projects">Projects</Nav.Link>
-                        <Nav.Link href="#price">Pricing</Nav.Link>
+                        <Nav.Link as={Link} to="/contact">Contact me</Nav.Link>
                     </Nav>
                     <Nav className="ms-auto">
                         <a href="https://drive.google.com/file/d/18b6KTrb3fTtyDcACYpww3xH98xGZiqjV/view?usp=sharing" target="_blank" rel="noreferrer">

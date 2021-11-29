@@ -7,7 +7,7 @@ const Projects = () => {
     return (
         <div className="color2">
             <Container>
-                <h1 className="text-white pt-5">Here are some projects sample</h1>
+                <h1 className="text pt-5">Here are some projects sample</h1>
                 <Row xs={1} md={2} lg={3} className="g-4 py-5 px-3 align-items-center">
                     <Col>
                         <Card>
