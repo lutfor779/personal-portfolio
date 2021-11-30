@@ -6,6 +6,7 @@ import Project from "./pages/Projects/Project/Project";
 import Projects from "./pages/Projects/Projects/Projects";
 import Footer from "./pages/Shared/Footer/Footer";
 import Navigation from './pages/Shared/Navbar/Navigation';
+import NotFound from './pages/Shared/NotFound/NotFound'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path=":projectId" element={<Project />} />
           </Route>
           <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -68,7 +68,7 @@ const Project = () => {
                             <Col md={5} xxl={4}>
                                 <Card.Header as="h3" className="text">Details</Card.Header>
                                 <Card.Body>
-                                    <ul className="text-start mb-5">
+                                    <ul className="text-start mb-5 row g-3">
                                         <li>{targetProject?.detail1}</li>
                                         <li>{targetProject?.detail2}</li>
                                         <li>{targetProject?.detail3}</li>
