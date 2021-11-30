@@ -1,0 +1,49 @@
+[
+    {
+        "id": "1",
+        "name":"Mobile House",
+        "img":"https://i.postimg.cc/8c9FFH9y/projects1.png",
+        "live":"https://mobile-house-81be7.web.app/",
+        "client":"https://github.com/lutfor779/Mobile-House",
+        "server":"https://github.com/lutfor779/Mobile_House_Server",
+        "img1":"https://i.postimg.cc/fbqT2G0g/project1-detail1.png",
+        "img2":"https://i.postimg.cc/k5ggyJDb/project1-detail2.png",
+        "img3":"https://i.postimg.cc/FR2Fm0py/project1-detail3.png",
+        "img4":"https://i.postimg.cc/W3DpQ5Gp/project1-detail4.png",
+        "detail1": "User can explore, order, manage order and has an option to give or view others feedback",
+        "detail2": "Have registration or logging in option with email and password. Also can log in with his Gmail account",
+        "detail3":"Admin has full control for the update, delete, modify even has an option to make a customer as admin",
+        "technologies": "React, NodeJS, ExpressJS, MongoDB, Material-UI, Firebase, Heroku etc."
+    },
+    {
+        "id": "2",
+        "name":"LR Travel Agency",
+        "img":"https://i.postimg.cc/RCDJbShc/projects2.png",
+        "live":"https://lr-travel-agent.web.app/",
+        "client":"https://github.com/lutfor779/Tourism-Client-Site",
+        "server":"https://github.com/lutfor779/Tourism-Server",
+        "img1":"https://i.postimg.cc/8cRGS9jG/project2-detail1.png",
+        "img2":"https://i.postimg.cc/wvsHW7z7/project2-detail2.png",
+        "img3":"https://i.postimg.cc/C5khKdrW/project2-detail3.png",
+        "img4":"https://i.postimg.cc/wBnYsgNH/project2-detail4.png",
+        "detail1": "Without logging in, the user can just explore and see package details but can't book a package",
+        "detail2": "After logging in, users are able to book, manage to book and see other bookings also",
+        "detail3":"Admin is able to accept or delete orders and add a new package",
+        "technologies": "React, NodeJS, ExpressJS, MongoDB, React-Bootstrap, Firebase, Heroku etc."
+    },
+    {
+        "id": "3",
+        "name":"Health Care",
+        "img":"https://i.postimg.cc/d3LktXHk/projects3.png",
+        "live":"https://react-health-care.web.app/",
+        "client":"https://github.com/lutfor779/Health_Care",
+        "img1":"https://i.postimg.cc/J0cfgX24/project3-detail1.png",
+        "img2":"https://i.postimg.cc/tCGRMtYy/project3-detail2.png",
+        "img3":"https://i.postimg.cc/BnY04xQj/project3-detail3.png",
+        "img4":"https://i.postimg.cc/kGmrfswp/projects3-detal4.png",
+        "detail1": "Implement registration, login system using email and password, Gmail & Github account",
+        "detail2": "Users have to use one email address for one log-in option. If one is already used, users are not able to use it for other login systems",
+        "detail3":"After logging in, users are able to explore our doctors, medicines, and product details",
+        "technologies": "React, Bootstrap, Firebase, etc."
+    }
+]

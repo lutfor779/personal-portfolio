@@ -1,53 +1,29 @@
-import React from 'react';
-import { Card, Col, Container, Row } from 'react-bootstrap';
-import img1 from './../../../images/projects-banner/projects1.png';
-import img2 from './../../../images/projects-banner/projects2.png'; import img3 from './../../../images/projects-banner/projects3.png';
+import React, { useEffect, useState } from 'react';
+import { Container, Row } from 'react-bootstrap';
 import './Projects.css';
+import SingleProject from './SingleProject/SingleProject';
 const Projects = () => {
+    const [projects, setProjects] = useState([]);
+
+    useEffect(() => {
+        fetch("./fakeDB.json")
+            .then(res => res.json())
+            .then(data => setProjects(data))
+    }, []);
+
+
     return (
-        <div className="color2">
+        <div className="color1">
             <Container>
-                <h1 className="text pt-5">Here are some projects sample</h1>
+                <h1 className="highlight pt-5 mb-3">My Projects</h1>
+                <p className="text">CLICK || HOVER</p>
+
                 <Row xs={1} md={2} lg={3} className="g-4 py-5 px-3 align-items-center">
-                    <Col>
-                        <Card>
-                            <Card.Img variant="top" src={img1} height="450px" />
-                            <Card.ImgOverlay>
-                                <Card.Title>Mobile House</Card.Title>
-                                <Card.Text>
-                                    User can explore, order, manage order and has an option to give or view others
-                                    feedback
-                                </Card.Text>
-                                <small><button className="card-btn mt-5">Details</button></small>
-                            </Card.ImgOverlay>
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card >
-                            <Card.Img variant="top" src={img2} height="450px" />
-                            <Card.ImgOverlay>
-                                <Card.Title>LR Travel Agency</Card.Title>
-                                <Card.Text>
-                                    Without logging in, the user can just explore and see package details but can't book a
-                                    package
-                                </Card.Text>
-                                <small><button className="card-btn mt-5">Details</button></small>
-                            </Card.ImgOverlay>
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card>
-                            <Card.Img variant="top" src={img3} height="450px" />
-                            <Card.ImgOverlay>
-                                <Card.Title>Health Care</Card.Title>
-                                <Card.Text>
-                                    Implement registration, login system using email and password, Gmail & Github
-                                    account
-                                </Card.Text>
-                                <small><button className="card-btn mt-5">Details</button></small>
-                            </Card.ImgOverlay>
-                        </Card>
-                    </Col>
+
+                    {
+                        projects.map(project => <SingleProject key={project.id} project={project} />)
+                    }
+
                 </Row>
             </Container>
         </div>

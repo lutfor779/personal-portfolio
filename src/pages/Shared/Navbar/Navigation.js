@@ -1,14 +1,14 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import logo from './../../../images/logo.png';
 import './Navigation.css';
 
 const Navigation = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: "#0c0845" }} variant="dark">
+        <Navbar collapseOnSelect expand="md" style={{ backgroundColor: "#0c0845" }} variant="dark" sticky="top">
             <Container>
-                <Navbar.Brand as={Link} to="/">
+                <Navbar.Brand as={HashLink} to="/">
                     <img
                         alt=""
                         src={logo}
@@ -22,9 +22,10 @@ const Navigation = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                        <Nav.Link as={Link} to="projects">Projects</Nav.Link>
-                        <Nav.Link as={Link} to="/contact">Contact me</Nav.Link>
+                        <Nav.Link as={HashLink} to="home#home">Home</Nav.Link>
+                        <Nav.Link as={HashLink} to="projects">Projects</Nav.Link>
+                        <Nav.Link as={HashLink} to="home#about">About</Nav.Link>
+                        <Nav.Link as={HashLink} to="contact">Contact</Nav.Link>
                     </Nav>
                     <Nav className="ms-auto">
                         <a href="https://drive.google.com/file/d/18b6KTrb3fTtyDcACYpww3xH98xGZiqjV/view?usp=sharing" target="_blank" rel="noreferrer">

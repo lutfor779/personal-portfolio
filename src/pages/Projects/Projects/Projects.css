@@ -1,3 +1,7 @@
+.card{
+    background-color: #0f0c29; 
+    color: white;
+}
 .card-img-overlay{
     display: none;
     color: white;
@@ -9,21 +13,5 @@
 }
 .card:hover .card-img-overlay{
     display: block;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-.card-btn {
-    background-image: linear-gradient(to right, #52ffb7 0%, #525eff  51%, #52ffb7 100%);
-    text-transform: uppercase;
-}
-.card-btn{
-    color: #2a0845;
-    text-align: center;
-    text-decoration: none;
-    padding: 7px 25px;
-    border-radius: 10px;
-    transition: 0.5s;
-    background-size: 200% auto;
-}
-.card-btn:hover {
-   background-position: right center; 
+    background-color: rgba(0, 0, 0, 0.8);
 }
