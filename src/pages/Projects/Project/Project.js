@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
 
 const Project = () => {
@@ -19,7 +19,32 @@ const Project = () => {
     return (
         <div className="color1">
             <Container>
-                <h1 className="highlight py-5">{targetProject?.name}</h1>
+                <h1 className="highlight pt-5">{targetProject?.name}</h1>
+                <div className="pt-3 pb-5">
+                    <a href={targetProject?.live} target="_blank" rel="noreferrer">
+                        <Button variant="success" size="sm">
+                            Live Site
+                        </Button>
+                    </a>
+                    <a href={targetProject?.client}
+                        className="mx-3"
+                        target="_blank"
+                        rel="noreferrer">
+                        <Button variant="outline-warning"
+                            size="sm"
+                            className="mx-10px">
+                            Client
+                        </Button>
+                    </a>
+                    {
+                        targetProject?.server && <a href={targetProject?.server} target="_blank" rel="noreferrer">
+                            <Button variant="outline-warning" size="sm">
+                                Server
+                            </Button>
+                        </a>
+                    }
+                </div>
+
                 <div className="pb-5">
                     <Card className="p-3">
                         <Row className="g-0 align-items-center">
