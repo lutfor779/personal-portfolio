@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
+import Blogs from "./pages/Blogs/Blogs/Blogs";
 import Contact from "./pages/Contact/Contact/Contact";
 import Home from "./pages/Home/Home/Home";
 import Project from "./pages/Projects/Project/Project";
@@ -21,6 +22,7 @@ function App() {
             <Route path=":projectId" element={<Project />} />
           </Route>
           <Route path="contact" element={<Contact />} />
+          <Route path="blogs" element={<Blogs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
