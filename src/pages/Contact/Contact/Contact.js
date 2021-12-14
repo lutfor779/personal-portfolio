@@ -51,11 +51,10 @@ const Contact = () => {
                                 <ContactForm />
                             </Card.Body>
                         </Card>
-
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </div >
     );
 };
 

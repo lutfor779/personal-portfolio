@@ -83,6 +83,7 @@ const Project = () => {
                         </Row>
                     </Card>
                 </div>
+                {/* </Fade> */}
             </Container>
         </div>
     );

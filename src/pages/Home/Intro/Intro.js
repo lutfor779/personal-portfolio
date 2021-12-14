@@ -11,6 +11,7 @@ const Intro = () => {
                     <Col className="text-start" xs={{ order: 'last' }} md={{ order: 'first' }}>
                         <p className="text">WELCOME TO MY WORLD</p>
                         <h1>Hi, I'm <span className="highlight">LUTFOR RAHMAN</span></h1>
+
                         <h3>a <span className="highlight">Web Developer</span></h3>
                         <p>
                             I love to create Awesome website with more cleaner code. Knowledgeable in the user interface, testing, and

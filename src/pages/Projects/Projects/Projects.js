@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import './Projects.css';
 import SingleProject from './SingleProject/SingleProject';
+
 const Projects = () => {
     const [projects, setProjects] = useState([]);
 

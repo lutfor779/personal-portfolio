@@ -6,7 +6,11 @@ import './Navigation.css';
 
 const Navigation = () => {
     return (
-        <Navbar collapseOnSelect expand="md" style={{ backgroundColor: "#0c0845" }} variant="dark" sticky="top">
+        <Navbar sticky='top'
+            collapseOnSelect
+            expand="md"
+            style={{ backgroundColor: "#0c0845" }}
+            variant="dark">
             <Container>
                 <Navbar.Brand as={HashLink} to="/">
                     <img
@@ -36,6 +40,7 @@ const Navigation = () => {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
+
     );
 };
 

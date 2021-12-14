@@ -1,11 +1,12 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import profile from '../../../images/lr3.png';
 
 const About = () => {
     return (
         <div className="color2">
-            <Container >
+            <Container>
                 <h1 className="text pt-5" id="about">About Me</h1>
                 <Row xs={1} md={2} className="py-5 px-3 align-items-center text-white">
                     <Col>
@@ -21,9 +22,10 @@ const About = () => {
                         <p>
                             Knowledgeable Front End Developer adept at creating successful websites that meet customer needs. Specializing in collaborating with all kinds of customers to gather requirements, produce plans and improve designs for usability and functionality.
                         </p>
-                        <a href="https://drive.google.com/file/d/18b6KTrb3fTtyDcACYpww3xH98xGZiqjV/view?usp=sharing" target="_blank" rel="noreferrer">
+
+                        <Link to="/public/Md_Lutfor_Rahman_Resume.pdf" target="_blank" download>
                             <button className="nav-btn">Download Resume</button>
-                        </a>
+                        </Link>
                     </Col>
                 </Row>
             </Container>
