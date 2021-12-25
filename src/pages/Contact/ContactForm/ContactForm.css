@@ -3,11 +3,11 @@
     color: white;
 }
 
-.fab{
+.lab{
     font-size: 2.2em;
     color: white;    
 }
-.fab:hover{
+.lab:hover{
     color: #52ffb7;    
     transform: scale(1.2);
 }

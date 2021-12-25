@@ -34,13 +34,13 @@ const Contact = () => {
                                     Find With Me
                                 </Card.Text>
                                 <Card.Link href="https://www.linkedin.com/in/md-lutfor-rahman-1b78a9216/" target="_blanck">
-                                    <i className="fab fa-linkedin"></i>
+                                    <i className="lab la-linkedin"></i>
                                 </Card.Link>
                                 <Card.Link href="https://github.com/lutfor779" target="_blanck">
-                                    <i className="fab fa-github"></i>
+                                    <i className="lab la-github"></i>
                                 </Card.Link>
                                 <Card.Link href="https://www.facebook.com/profile.php?id=100060296948064" target="_blanck">
-                                    <i className="fab fa-facebook"></i>
+                                    <i className="lab la-facebook"></i>
                                 </Card.Link>
                             </Card.Body>
                         </Card>
